@@ -1,19 +1,8 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-}
-body{
-  max-width:1200px;
-  margin:0 auto;
-}
-h1{
-  font-size:5rem;
-  background-color:lightgray;
-  font-weight:800;
-  padding-top:3rem;
-  padding-bottom:3rem;
-  text-align: center;
+.hero{
+  background-image:url("https://picsum.photos/id/88/1280/960");
+  background-size: cover;
+  padding-top:15rem;
+  padding-bottom:15rem;
+  background-color:rgba(72, 55, 255, 0.3);
+  background-blend-mode:overlay;
 }
