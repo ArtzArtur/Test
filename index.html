@@ -4,20 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="hero grid place-content-center">
+    <div class="hero grid place-content-center relative">
       <h1
-        class="p-4 text-white text-center font-extrabold tracking-widest text-5xl"
+        class="p-4 text-white text-center font-extrabold tracking-tight text-5xl"
       >
         My testing site on git
       </h1>
+      <div class="absolute -bottom-[4.5rem] right-0 text-white text-6xl flex flex-col justify-center items-center  bg-blue-800 border-8 p-4">
+        <p class="text-3xl">Just testing..</p>
+        <i class="m-6 fas fa-satellite-dish"></i>
+      </div>
     </div>
-    <header class="text-center text-3xl bg-blue-100 grid place-content-center">
-      <p>Welcome to my special website for testing smth</p>
+    <header class="text-center text-3xl bg-blue-100 grid place-content-center font-semibold">
+      <p>Welcome to my first website for github</p>
     </header>
+    <main>
+      <section class="cards">
+        <h2 class="text-3xl text-center py-10 ">Cards section</h2>
+        <div class="cards-container flex flex-col lg:flex-row leading-10 tracking-widest">
+        <div class="card
+        shadow-md m-2">
+          <div class="card-header flex justify-center items-center">
+            <h2 class="text-xl uppercase ">My card</h2>
+            <i class="px-2 fas fa-id-card text-5xl"></i>
+          </div>
+          <div class="card-body py-2 px-10 first-letter:font-extrabold first-letter:text-3xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laborum ratione placeat asperiores quaerat, nam, iure, optio quibusdam tenetur magni porro obcaecati voluptate ullam temporibus veniam. Atque natus rerum necessitatibus?
+          </div>
+        </div>
+        <div class="card shadow-md m-2">
+          <div class="card-header flex justify-center items-center">
+            <h2 class="text-xl uppercase">My card</h2>
+            <i class="px-2 fas fa-id-card text-5xl"></i>
+          </div>
+          <div class="card-body py-2 px-10 first-letter:font-extrabold first-letter:text-3xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laborum ratione placeat asperiores quaerat, nam, iure, optio quibusdam tenetur magni porro obcaecati voluptate ullam temporibus veniam. Atque natus rerum necessitatibus?
+          </div>
+        </div>
+        <div class="card shadow-md m-2">
+          <div class="card-header flex justify-center items-center">
+            <h2 class="text-xl uppercase">My card</h2>
+            <i class="px-2 fas fa-id-card text-5xl"></i>
+          </div>
+          <div class="card-body py-2 px-10 first-letter:font-extrabold first-letter:text-3xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero laborum ratione placeat asperiores quaerat, nam, iure, optio quibusdam tenetur magni porro obcaecati voluptate ullam temporibus veniam. Atque natus rerum necessitatibus?
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
   </body>
 </html>
