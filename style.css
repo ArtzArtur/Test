@@ -1,9 +1,18 @@
 html{
   scroll-behavior: smooth;
 }
+body{
+  margin:0 auto;
+}
 img{
   width:100%;
   height:auto;
+}
+.main-slide{
+  display:block;
+}
+.next{
+  transform:translate(-100%);
 }
 .hero{
   background-image:url("https://picsum.photos/id/88/1280/960");
@@ -16,6 +25,6 @@ header{
   height:25vh;
 }
 .offer{
-  grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
   grid-gap:1rem;
 }

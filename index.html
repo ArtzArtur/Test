@@ -101,7 +101,7 @@
         </div>
         </div>
       </section>
-      <section class="offer p-10 grid" id="offer">
+      <section class="offer grid" id="offer">
         <div class="offer-item">
           <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">First offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
@@ -163,13 +163,13 @@
             <h3>Few photos from our everyday struggle</h3>
           </div>
           <div class="gallery-container">
-            <div class="absolute z-10 top-1/2">
-            <button>Next</button>
-            <button>Prev</button>
+            <div class="flex justify-around">
+            <button class="bg-black btn-prev text-white p-2 rounded m-2 w-24">Prev</button>
+            <button class="btn-next  bg-black text-white p-2 rounded m-2 w-24">Next</button>
           </div>
-          <div class="gallery-slides max-w-screen-md relative">
-            <div class="absolute top-0 left-0 flex overflow-x-hidden">
-            <img src="https://picsum.photos/id/6/1290/960" alt="Gallery photo">
+          <div class="gallery-slides max-w-screen-md mx-auto text-center relative">
+            <div class="top-0 left-0 transform absolute flex">
+            <img src="https://picsum.photos/id/6/1290/960" alt="Gallery photo" class="main-slide">
             <img src="https://picsum.photos/id/5/1290/960" alt="Gallery photo">
             <img src="https://picsum.photos/id/7/1290/960" alt="Gallery photo">
           </div>
