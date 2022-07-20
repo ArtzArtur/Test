@@ -4,15 +4,14 @@ html{
 body{
   margin:0 auto;
 }
+.gallery-slides{
+  /* overflow-x:hidden; */
+}
 img{
+  min-height:100%;
   width:100%;
-  height:auto;
-}
-.main-slide{
   display:block;
-}
-.next{
-  transform:translate(-100%);
+  transition:transform 0.5s ease;
 }
 .hero{
   background-image:url("https://picsum.photos/id/88/1280/960");
