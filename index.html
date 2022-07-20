@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>My test page</title>
   </head>
   <body>
     <div class="hero grid place-content-center relative">
@@ -101,7 +101,7 @@
         </div>
         </div>
       </section>
-      <section class="offer grid" id="offer">
+      <section class="offer flex flex-wrap justify-center" id="offer">
         <div class="offer-item">
           <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">First offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
@@ -140,7 +140,7 @@
         </div>
         <div class="offer-item">
           <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Fifth offer</h3>
-          <div class="offer-body leading-10 bg-slate-100 text-md">
+          <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
           <div class="offer-price py-2 text-left bg-blue-100 text-blue-900 font-bold">
@@ -162,12 +162,16 @@
           <div class="gallery-head text-center text-3xl p-10 ">
             <h3>Few photos from our everyday struggle</h3>
           </div>
-          <div class="gallery-container">
-            <div class="flex justify-around">
-            <button class="bg-black btn-prev text-white p-2 rounded m-2 w-12"><i class="fas fa-angle-left"></i></button>
-            <button class="btn-next  bg-black text-white p-2 rounded m-2 w-12"><i class="fas fa-angle-right"></i></button>
-          </div>
-          <div class="gallery-slides max-w-screen-md mx-auto text-center relative overflow-hidden min-h-64">
+          <div class="gallery-container relative max-w-screen-lg mx-auto">
+
+            
+              <button class="bg-black btn-prev text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 left-0"><i class="fas fa-angle-left"></i></button>
+              <button class="btn-next  bg-black text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 right-0"><i class="fas fa-angle-right"></i></button>
+
+              <div class="gallery-slides text-center relative overflow-hidden">
+
+
+
             <img src="https://picsum.photos/id/6/1290/960" alt="Gallery photo" class="main-slide absolute">
             <img src="https://picsum.photos/id/5/1290/960" alt="Gallery photo" class="absolute">
             <img src="https://picsum.photos/id/7/1290/960" alt="Gallery photo" class="absolute">
