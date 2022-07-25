@@ -1,6 +1,6 @@
 const btnNext = document.querySelector(".btn-next");
 const btnPrev = document.querySelector(".btn-prev");
-const imgs  = document.querySelectorAll("img")
+const imgs  = document.querySelectorAll(".slide")
 let currImg = 0;
 const limit = imgs.length-1
 
@@ -9,8 +9,10 @@ imgs.forEach((a,idx)=>{
 })
 
 
+let slideShow = setInterval(nextPhoto,2500);
+
+
 function nextPhoto(){
-  
   if(currImg===limit){
   currImg = 0
   }
@@ -20,11 +22,11 @@ function nextPhoto(){
   imgs.forEach((a,idx)=>{
     a.style.transform=`translateX(${(idx-currImg)*100}%)`
   })
+  clearInterval(slideShow)
+  slideShow = setInterval(nextPhoto,2500);
 }
 
 function prevPhoto(){
-  console.log(limit)
-  console.log(currImg)
   if(currImg===0){
     currImg=limit
   }
@@ -34,7 +36,10 @@ function prevPhoto(){
   imgs.forEach((a,idx)=>{
     a.style.transform=`translateX(${(idx-currImg)*100}%)`
   })
+  clearInterval(slideShow)
+  slideShow = setInterval(nextPhoto,2500);
 }
 
 btnNext.addEventListener('click',nextPhoto)
 btnPrev.addEventListener('click',prevPhoto)
+

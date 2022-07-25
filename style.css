@@ -5,14 +5,18 @@ body{
   margin:0 auto;
 }
 .gallery-slides{
-  min-height:600px;
+  min-height:750px;
   overflow-x:hidden;
 }
-img{
+.gallery{
+  max-width:1024px;
+  margin:0 auto;
+}
+.slide{
   height:100%;
   width:100%;
   object-fit: cover;
-  transition:transform 0.5s ease;
+  transition:transform 0.75s ease;
 }
 .hero{
   background-image:url("https://picsum.photos/id/88/1280/960");
@@ -28,7 +32,19 @@ header{
   margin:1rem;
   width:clamp(350px,100vw,500px);
 }
-/* .offer{
-  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-  grid-gap:1rem;
-} */
+.gallery-small img:hover{
+  outline:1px solid #000;
+  cursor: pointer;
+}
+.gallery-head{
+  position:relative;
+}
+.gallery .gallery-head:before{
+  content:"";
+  height:100%;
+  width:5%;
+  background-color:#8a2be2;
+  top:0;
+  right:0;
+  position:absolute;
+}
