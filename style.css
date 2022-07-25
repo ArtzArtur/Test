@@ -39,7 +39,7 @@ header{
 .gallery-head{
   position:relative;
 }
-.gallery .gallery-head:before{
+.gallery-head.gallery{
   content:"";
   height:100%;
   width:5%;
