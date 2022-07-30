@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
     <title>My test page</title>
+    <script src="index.js" defer></script>
+    <noscript>This page require Javascript available</noscript>
   </head>
   <body>
     <div class="hero grid place-content-center relative">
@@ -103,7 +105,7 @@
       </section>
       <section class="offer flex flex-wrap justify-center" id="offer">
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">First offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">First offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -112,7 +114,7 @@
           </div>
         </div>
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Second offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">Second offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -121,7 +123,7 @@
           </div>
         </div>
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Third offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">Third offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -130,7 +132,7 @@
           </div>
         </div>
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Fourth offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">Fourth offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -139,7 +141,7 @@
           </div>
         </div>
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Fifth offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">Fifth offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -148,7 +150,7 @@
           </div>
         </div>
         <div class="offer-item">
-          <h3 class="bg-blue-500 text-white mx-auto p-2 text-center text-xl">Sixth offer</h3>
+          <h3 class="bg-blue-700 text-white mx-auto p-2 text-center text-xl">Sixth offer</h3>
           <div class="offer-body p-2 leading-10 bg-slate-100 text-md">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe reprehenderit sequi asperiores quidem eligendi, error veniam officiis expedita, facilis, repellendus fuga eius porro! Voluptatum culpa corporis porro eveniet non consequatur perferendis et voluptatibus in? Voluptas accusamus iure voluptatibus repellendus rem.</p>
           </div>
@@ -165,41 +167,66 @@
           <div class="gallery-container relative max-w-screen-lg mx-auto">
 
             
-              <button class="bg-black btn-prev text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 left-0"><i class="fas fa-angle-left"></i></button>
-              <button class="btn-next  bg-black text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 right-0"><i class="fas fa-angle-right"></i></button>
+              <div class="bg-black btn-prev text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 left-0 grid place-content-center cursor-pointer"><i class="fas fa-angle-left"></i></div>
+              <div class="btn-next  bg-black text-white px-4 rounded m-2 w-12 h-12 absolute z-10 top-1/2 right-0 grid place-content-center cursor-pointer"><i class="fas fa-angle-right"></i></div>
 
               <div class="gallery-slides text-center relative overflow-hidden">
 
-            <img src="https://picsum.photos/id/6/1290/960" alt="Gallery photo" class="slide absolute">
-            <img src="https://picsum.photos/id/5/1290/960" alt="Gallery photo" class="slide absolute">
-            <img src="https://picsum.photos/id/7/1290/960" alt="Gallery photo" class="slide absolute">
-            <img src="https://picsum.photos/id/8/1290/960" alt="Gallery photo" class="slide absolute">
-            <img src="https://picsum.photos/id/100/1290/960" alt="Gallery photo" class="slide absolute">
-            <img src="https://picsum.photos/id/117/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/6/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/5/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/7/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/8/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/100/1290/960" alt="Gallery photo" class="slide absolute">
+            <img loading="lazy" src="https://picsum.photos/id/117/1290/960" alt="Gallery photo" class="slide absolute">
           </div>
         </div>
         </div>
-        <div class="gallery-container">
+        <div class="gallery-container relative">
 
           <div class="gallery-head text-2xl text-center p-10 tracking-tighter">
             <h4>..and second gallery with some nature to relax</h4>
         </div>
         <div class="gallery-big max-w-screen-lg mx-auto">
-          <img src="https://picsum.photos/id/88/1290/960" class="main" alt="main photo">
+          <img loading="lazy" src="https://picsum.photos/id/88/1290/960" class="main-photo max-h-[700px]" alt="main photo">
         </div>
-        <div class="gallery-small grid grid-flow-col gap-2 py-2 max-w-screen-lg mx-auto grid-rows-2">
-          <img src="https://picsum.photos/id/88/1290/960" class="main" alt="main photo">
-          <img src="https://picsum.photos/id/90/1290/960" alt="photo">
-          <img src="https://picsum.photos/id/91/1290/960" alt="photo">
-          <img src="https://picsum.photos/id/92/1290/960" alt="photo">
-          <img src="https://picsum.photos/id/93/1290/960" alt="photo">
-          <img src="https://picsum.photos/id/94/1290/960" alt="photo">
+        <div class="gallery-small grid grid-flow-col gap-2 py-2 max-w-screen-sm  mx-auto grid-rows-2 md:absolute 
+        md:top-36 md:right-[1rem] md:flex md:flex-col md:max-w-[8rem] md:bg-white md:p-2">
+          <img loading="lazy" src="https://picsum.photos/id/88/1290/960" class="photo focus" alt="main photo">
+          <img loading="lazy" src="https://picsum.photos/id/90/1290/960" class="photo" alt="photo">
+          <img loading="lazy" src="https://picsum.photos/id/91/1290/960" class="photo" alt="photo">
+          <img loading="lazy" src="https://picsum.photos/id/92/1290/960" class="photo" alt="photo">
+          <img loading="lazy" src="https://picsum.photos/id/93/1290/960" class="photo" alt="photo">
+          <img loading="lazy" src="https://picsum.photos/id/94/1290/960" class="photo" alt="photo">
 
             
         </div>
       </div>
       </section>
+      <section class="contact">
+          <div class="contact-head text-2xl text-center p-10 tracking-tighter">
+            <h3>Have a question..?</h3>
+          </div>
+          <form class="bg-slate-600  lg:grid lg:grid-cols-3"> 
+            <div class="contact-head text-2xl text-center p-10 tracking-tighter text-white lg:self-center">
+              <h3>..fell free to ask</h3>
+              <i class="pt-10 text-[8rem] fas fa-arrow-down lg:transform lg:-rotate-90"></i>
+            </div>
+            <div class="input-control p-2 lg:self-center">
+              <label>Just type your name here..</label>
+              <input type="text" placeholder="Enter here your name" class="shadow-md p-1 my-2 block mx-auto rounded">
+              <label>..your mail here..</label>
+              <input type="email" placeholder="Enter here your e-mail" class="shadow-md p-1 my-2 block mx-auto rounded">
+            </div>
+            <div class="p-6 lg:self-center">
+              <label>..and your question here :)</label>
+              <textarea class="shadow-md min-h-[250px] w-3/4 mx-auto block p-2 rounded lg:w-full" placeholder="Ask me anything ;)"></textarea>
+            </div>
+            <div class="text-center text-white pb-6 lg:col-span-full">
+              <button class="shadow-md px-3 py-2 rounded bg-slate-400 hover:bg-slate-50 hover:text-black ">Send</button>
+            </div>
+
+          </form>
+      </section>
     </main>
-    <script src="index.js"></script>
   </body>
 </html>
