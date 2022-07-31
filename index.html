@@ -22,7 +22,7 @@
         My testing site on git
       </h1>
       <div
-        class="absolute -bottom-[4.5rem] right-0 text-white text-6xl flex flex-col justify-center items-center bg-blue-800 border-8 p-4"
+        class="absolute -bottom-[3.5rem] right-0 text-white text-6xl flex flex-col justify-center items-center bg-blue-800 border-8 p-4"
       >
         <p class="text-3xl">Just testing..</p>
         <i class="m-6 fas fa-satellite-dish"></i>
@@ -222,11 +222,43 @@
               <textarea class="shadow-md min-h-[250px] w-3/4 mx-auto block p-2 rounded lg:w-full" placeholder="Ask me anything ;)"></textarea>
             </div>
             <div class="text-center text-white pb-6 lg:col-span-full">
-              <button class="shadow-md px-3 py-2 rounded bg-slate-400 hover:bg-slate-50 hover:text-black ">Send</button>
+              <button class="shadow-md px-3 py-2 rounded bg-slate-400 hover:bg-slate-50 hover:text-black cursor-pointer"  disabled>Send</button>
             </div>
-
           </form>
       </section>
     </main>
+    <footer>
+      <div class="contact w-full grid">
+        <div class="contact-header p-4 text-center text-2xl tracking-tighter">
+          <p>Visit us</p>
+        </div>
+        <div class="contact-map p-4 lg:grid lg:grid-cols-2">
+          <div class="text-center p-4 text-lg tracking-wide leading-loose shadow-md grid place-content-center">
+            <address>
+              Company Address, <br/>
+              via Napoli 77 street,<br/>
+              99-999 Syracuse,<br/> 
+              Italy<br/>
+              <i class="fas fa-arrow-down lg:transform lg:-rotate-90 m-6 text-2xl"></i>
+            </address>
+          </div>
+          <iframe 
+          class="w-full lg:p-10 shadow-md"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d407803.3022605995!2d15.083396915252909!3d37.010671914831924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1659260731897!5m2!1sen!2spl"  allowfullscreen="true" height="450" loading="lazy" ></iframe>
+        </div>
+      <div class="social flex justify-around text-6xl p-4 shadow-md">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <div class="text-center text-lg p-4">
+
+        <p>Copyrights © by Artur 2022</p>
+      </div>
+      </div>
+    </footer>
   </body>
-</html>
+  </html>
+  

@@ -48,6 +48,10 @@ label{
   color:#fff;
   display:block;
 }
+.social i:hover{
+cursor:pointer;
+color: rgb(40, 113, 215);
+}
 .focus{
   opacity:1;
 }
